@@ -1,0 +1,54 @@
+.banner {
+    width: 100%;
+    /* 使横幅充满整个页面宽度 */
+    /* 隐藏溢出内容 */
+    margin-top: 80px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    @media (max-width: 768px) {
+      margin-top: 80px;
+    }
+  
+    .bannerImg {
+      width: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* 让图像充满横幅宽度 */
+      vertical-align: middle;
+  
+      @media (max-width: 768px) {
+        margin-top: 20%;
+  
+      }
+    }
+  }
+
+.mainArea {
+    padding: 100px 0 150px;
+  }
+  
+  .position:not(.slick-slider) {
+    min-height: 960px;
+  }
+  @media (max-width: 360px) {
+    .position:not(.slick-slider) {
+      min-height: 306px;
+    }
+  }
+
+
+  .packagetitle{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.4;
+    position: relative;
+    padding-left: 10px;
+    border-left: 3px solid #666;
+  }
+  
+  

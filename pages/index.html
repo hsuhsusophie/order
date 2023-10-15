@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="../images/icon.jpeg" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets//scss/all.scss">
+    <script type="module" src="../main.js"></script>
+    <!-- 引入 Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>onlineorder</title>
+</head>
+
+<body>
+    <%- include('./layout/header'); -%>
+
+        <!--banner-->
+        <section class="banner" id="banner">
+            <img class="bannerImg" src="../images/banner.jpeg" alt="Banner Image">
+            </div>
+        </section>
+        <!--bannerArea end-->
+
+        <!--menu-->
+
+        <section id="menu" style="padding: 0 12px;">
+
+            <div class="menu py-24">
+                <button class="category-btn text-center" data-category="All">全部</button>
+                <button class="category-btn text-center" data-category="Item1">人氣精選</button>
+                <button class="category-btn text-center" data-category="Item2">果茶類</button>
+                <button class="category-btn text-center" data-category="Item3">鮮萃研磨茶</button>
+                <button class="category-btn text-center" data-category="Item4">奶蓋慕斯</button>
+                <button class="category-btn text-center" data-category="Item5">立體茶包</button>
+            </div>
+
+            <div class="category-item Item1">
+                <h2 class="ItemTitle ">人氣精選</h2>
+                <!-- Item 1 的品项 -->
+                <ul class="card  mt-24 Item1">
+                    <li class="card-item">
+                        <img src="../images/drink1-1.png">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">又見檸檬塔</h3>
+                            <p class="text-end">$105</p>
+                            <button class="item align-self-end" data-name="又見檸檬塔" data-price="105"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink1-2.png" alt="Product 1">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end"> 決明烏龍奶蓋</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="決明烏龍奶蓋 " data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink1-3.png" alt="Product 1">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">水仙桂花蜜</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="水仙桂花蜜" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink1-4.png" alt="Product 1">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">鮮果百匯</h3>
+                            <p class="text-end">$130</p>
+                            <button class="item align-self-end" data-name="鮮果百匯" data-price="130"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink1-5.png" alt="Product 1">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">國王珍珠奶茶</h3>
+                            <p class="text-end">$110</p>
+                            <button class="item align-self-end" data-name="國王珍珠奶茶" data-price="110"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink1-6.png" alt="Product 1">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">熔岩黑糖波霸奶茶</h3>
+                            <p class="text-end">$120</p>
+                            <button class="item align-self-end" data-name="熔岩黑糖波霸奶茶" data-price="120"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category-item Item2">
+                <h2 class="ItemTitle ">果茶類</h2>
+                <!-- Item 2 的品项 -->
+                <ul class="card   mt-24 Item2">
+                    <li class="card-item">
+                        <img src="../images/drink2-1.png" alt="Product2">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 p class="text-end">水仙桂花+青檸原汁</h3>
+                            <p p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="水仙桂花+青檸原汁" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink2-2.png" alt="Product2">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">松葉綠茶+百香鮮果</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="松葉綠茶+百香鮮果" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink2-3.png" alt="Product2">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">水仙桂花+芒果果露</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="水仙桂花+芒果果露" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink2-4.png" alt="Product2">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">水仙桂花+百香鮮果</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="水仙桂花+百香鮮果" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink2-5.png" alt="Product2">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">松葉綠茶+芒果果露</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="松葉綠茶+芒果果露" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink2-6.png" alt="Product2">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">玉露清茶+青檸原汁</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="玉露清茶+青檸原汁" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink2-7.png" alt="Product2">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">玉露清茶+青檸原汁</h3>
+                            <p class="text-end">$195</p>
+                            <button class="item align-self-end" data-name="玉露清茶+青檸原汁" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category-item Item3">
+                <h2 class="ItemTitle ">鮮萃研磨茶</h2>
+                <!-- Item 3 的品项 -->
+                <ul class="card  mt-24 Item3">
+                    <li class="card-item">
+                        <img src="../images/drink3-1.png" alt="Product3">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">松葉綠茶</h3>
+                            <p class="text-end">$75</p>
+                            <button class="item align-self-end" data-name="松葉綠茶" data-price="75"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink3-2.png" alt="Product3">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">水仙桂花</h3>
+                            <p class="text-end">$75</p>
+                            <button class="item align-self-end"  data-name="水仙桂花" data-price="75"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink3-3.png" alt="Product3">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">玉露清茶</h3>
+                            <p class="text-end">$75</p>
+                            <button class="item align-self-end"  data-name="玉露清茶" data-price="75"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink3-4.png" alt="Product3">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">鳳眉紅茶</h3>
+                            <p class="text-end">$75</p>
+                            <button class="item align-self-end" data-name="鳳眉紅茶" data-price="75"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink3-5.png" alt="Product3">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">凍頂烏龍</h3>
+                            <p class="text-end">$75</p>
+                            <button class="item align-self-end" data-name="凍頂烏龍" data-price="75"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink3-6.jpeg" alt="Product3">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">決明子紅烏龍</h3>
+                            <p class="text-end">$75</p>
+                            <button class="item align-self-end" data-name="決明子紅烏龍" data-price="75"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category-item Item4">
+                <h2 class="ItemTitle ">奶蓋慕斯</h2>
+                <!-- Item 4 的品项 -->
+                <ul class="card  mt-24 Item4">
+                    <li class="card-item">
+                        <img src="../images/drink4-1.png" alt="Product4">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">松葉綠茶+奶蓋慕斯</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="松葉綠茶+奶蓋慕斯" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink4-2.png" alt="Product4">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">水仙桂花+奶蓋慕斯</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="水仙桂花+奶蓋慕斯" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink4-3.png" alt="Product4">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">玉露清茶+奶蓋慕斯</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="玉露清茶+奶蓋慕斯" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink4-4.png" alt="Product4">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">鳳眉紅茶+奶蓋慕斯</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="鳳眉紅茶+奶蓋慕斯" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink4-5.png" alt="Product4">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">凍頂烏龍+奶蓋慕斯</h3>
+                            <p class="text-end">$ 95</p>
+                            <button class="item align-self-end" data-name="凍頂烏龍+奶蓋慕斯" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink4-6.png" alt="Product4">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">決明子紅烏龍+奶蓋慕斯</h3>
+                            <p class="text-end">$95</p>
+                            <button class="item align-self-end" data-name="決明子紅烏龍+奶蓋慕斯" data-price="95"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category-item Item5">
+                <h2 class="ItemTitle ">立體茶包</h2>
+                <!-- Item 5 的品项 -->
+                <ul class="card  mt-24 Item5">
+                    <li class="card-item">
+                        <img src="../images/drink5-1.png" alt="Product5">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">松葉綠茶</h3>
+                            <p class="text-end">$210</p>
+                            <button class="item align-self-end" data-name="松葉綠茶" data-price="210"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink5-2.png" alt="Product5">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">玉露清茶</h3>
+                            <p class="text-end">$210</p>
+                            <button class="item align-self-end" data-name="玉露清茶" data-price="210"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink5-3.png" alt="Product5">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">桂花烏龍</h3>
+                            <p class="text-end">$210</p>
+                            <button class="item align-self-end" data-name="桂花烏龍" data-price="210"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+
+                    <li class="card-item">
+                        <img src="../images/drink5-4.png" alt="Product5">
+                        <div class="text-end card-body flex-column flex-1">
+                            <h3 class="text-end">鳳眉紅茶</h3>
+                            <p class="text-end">$210</p>
+                            <button class="item align-self-end" data-name="鳳眉紅茶" data-price="210"><i
+                                    class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+
+
+        <section id="shoppingcart" style="height: 100px;">
+
+            <div class="order">
+                <h2>購物車</h2>
+                <ul id="orderList"></ul>
+                <p>Total: $<span id="totalPrice">0</span></p>
+            </div>
+
+        </section>
+
+        <script>// 获取导航链接的元素
+         
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const categoryBtns = document.querySelectorAll('.category-btn');
+                const categoryItems = document.querySelectorAll('.category-item');
+                const orderList = document.getElementById('orderList');
+                const totalPrice = document.getElementById('totalPrice');
+
+                // 初始化订单和总价
+                let order = [];
+                let total = 0;
+
+                // 为每个项目按钮添加点击事件监听器
+                categoryBtns.forEach(categoryBtn => {
+                    categoryBtn.addEventListener('click', () => {
+                        const category = categoryBtn.getAttribute('data-category');
+
+                        // 隐藏所有项目的品项
+                        categoryItems.forEach(item => {
+                            item.style.display = 'none';
+                        });
+
+                        // 显示当前项目的品项
+                        const currentCategory = document.querySelector(`.category-item.${category}`);
+                        currentCategory.style.display = 'block';
+                    });
+                });
+
+                // 为“全部”按钮添加点击事件监听器
+                const allBtn = document.querySelector('.category-btn[data-category="All"]');
+                allBtn.addEventListener('click', () => {
+                    // 显示所有项目的品项
+                    categoryItems.forEach(item => {
+                        item.style.display = 'block';
+                    });
+                });
+
+                // 为每个品项按钮添加点击事件监听器
+                const items = document.querySelectorAll('.item');
+                items.forEach(item => {
+                    item.addEventListener('click', () => {
+                        const itemName = item.getAttribute('data-name');
+                        const itemPrice = parseFloat(item.getAttribute('data-price'));
+
+                        // 将品项添加到订单列表
+                        order.push({ name: itemName, price: itemPrice });
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `${itemName}: $${itemPrice.toFixed(2)}`;
+                        orderList.appendChild(listItem);
+
+                        // 更新总价
+                        total += itemPrice;
+                        totalPrice.textContent = total.toFixed(2);
+                    });
+                });
+            });
+        </script>
+
+
+        <%- include('./layout/footer'); -%>
+
+
+
+
+</body>
+
+</html>

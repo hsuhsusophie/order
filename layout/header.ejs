@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets//scss/all.scss">
+     <!-- 引入 Font Awesome CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <title>点餐系统</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container navbar-wrap">
+            <a class="navbar-logo" href="index.html">
+                <img src="../images/logo_h.png" alt="logo">
+            </a>
+
+            <ul class="navbar-nav">
+                <li class="navbar-item"><a class="navbar-link" href="about.html">關於我們</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html">三千菜單</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="index.html" id="openLoginModalLink"><i
+                            class="fas fa-user"></i> 會員登入</a></li>
+                <li class="navbar-item"><a class="navbar-link modal" href="#shoppingcart" id="showCartBtn"><i
+                            class="fas fa-shopping-cart"></i>購物車</a></li>
+            </ul>
+        </div>
+    </nav>
+
+     <!-- 登录模态框容器 -->
+     <div id="loginModal" class="modal" style="display: none;">
+        <div class="modal-content ">
+            <span class="close" id="closeLoginModalButton">&times;</span>
+            <h2 class="py-8">會員登入</h2>
+            <!-- 添加登录表单内容 -->
+            <form>
+                <label for="username">帳號：</label>
+                <input type="text" id="username" name="username" required><br><br>
+                <label for="password">密碼：</label>
+                <input type="password" id="password" name="password" required><br><br>
+                <input type="submit" value="登录">
+            </form>
+        </div>
+    </div>
+
+    <script>
+
+        // 获取链接和模态框元素
+        const openLoginModalLink = document.getElementById('openLoginModalLink');
+        const loginModal = document.getElementById('loginModal');
+        const closeLoginModalButton = document.getElementById('closeLoginModalButton');
+
+        // 打开登录模态框
+        openLoginModalLink.addEventListener('click', (e) => {
+            e.preventDefault(); // 阻止链接的默认行为
+            loginModal.style.display = 'block';
+        });
+
+        // 关闭登录模态框
+        closeLoginModalButton.addEventListener('click', () => {
+            loginModal.style.display = 'none';
+        });
+
+        // 点击模态框外部区域也可以关闭模态框
+        window.addEventListener('click', (e) => {
+            if (e.target === loginModal) {
+                loginModal.style.display = 'none';
+            }
+        });
+
+
+    </script>
+</body>
+
+</html>
